@@ -27,7 +27,7 @@ const Enemy* AutoAttack::findNearest(const Player* player,const std::vector<std:
     float px=player->x+player->width/2;
     float py=player->y+player->height/2;
     for(const auto& e : enemies){
-        if(e->isDead){跳過已死敵人死敵人
+        if(e->isDead){ //跳過已死敵人
             continue;
         }
         float dx=(e->x+e->width/2)-px;
